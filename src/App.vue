@@ -11,9 +11,10 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item href="#" :to="{ name: 'Notices' }">공지사항</b-nav-item>
-          <b-nav-item href="#">성인 이용안내</b-nav-item>
-          <b-nav-item :to="{ name: 'Schedule' }">레슨 예약</b-nav-item>
-          <b-nav-item href="#" disabled>유소년 이용안내(예정)</b-nav-item>
+          <b-nav-item href="#">성인야구</b-nav-item>
+          <b-nav-item href="#" disabled>유소년야구</b-nav-item>
+          <b-nav-item href="#" disabled>엘리트야구</b-nav-item>
+          <b-nav-item :to="{ name: 'Schedule' }">레슨예약</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -28,7 +29,7 @@
             <template v-slot:button-content>
               <em>User</em>
             </template>
-            <b-dropdown-item href="#">My페이지</b-dropdown-item>
+            <b-dropdown-item href="#" :to="{ name: 'AccountDetail' }">My페이지</b-dropdown-item>
             <b-dropdown-item href="#">로그아웃</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>

@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '@/views/Home.vue';
-import Notices from '@/views/Notices.vue';
-import Schedule from '@/views/Schedule.vue';
+import Home from '@/views/Home';
+import Notices from '@/views/Notices';
+import Schedule from '@/views/Schedule';
+import AccountDetail from '@/views/AccountDetail';
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/schedule',
     name: 'Schedule',
     component: Schedule
+  },
+  {
+    path: '/account/detail',
+    name: 'AccountDetail',
+    component: AccountDetail
   }
 ]
 
