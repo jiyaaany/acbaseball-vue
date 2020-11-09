@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '@/views/Home';
-import Notices from '@/views/Notices';
-import Schedule from '@/views/Schedule';
-import AccountDetail from '@/views/AccountDetail';
+import Home from '@/components/Home';
+import Notices from '@/components/Notices';
+import Schedule from '@/components/Schedule';
+import AccountsDetail from '@/components/AccountsDetail';
+import AccountsRegister from '@/components/AccountsRegister';
 
 Vue.use(VueRouter)
 
@@ -32,9 +33,14 @@ const routes = [
     component: Schedule
   },
   {
-    path: '/account/detail',
-    name: 'AccountDetail',
-    component: AccountDetail
+    path: '/accounts/detail',
+    name: 'AccountsDetail',
+    component: AccountsDetail
+  },
+  {
+    path: '/accounts/register',
+    name: 'AccountsRegister',
+    component: AccountsRegister
   }
 ]
 

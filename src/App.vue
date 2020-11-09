@@ -23,13 +23,15 @@
             <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0" type="submit">검색</b-button>
           </b-nav-form>
-          
+
+          <b-link :to="{ name: 'AccountsRegister' }">회원가입</b-link>
+          <b-link href="#foo">로그인</b-link>
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
               <em>User</em>
             </template>
-            <b-dropdown-item href="#" :to="{ name: 'AccountDetail' }">My페이지</b-dropdown-item>
+            <b-dropdown-item href="#" :to="{ name: 'AccountsDetail' }">My페이지</b-dropdown-item>
             <b-dropdown-item href="#">로그아웃</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
